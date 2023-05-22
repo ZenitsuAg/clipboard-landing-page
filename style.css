@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --strong-cyan: hsl(171, 66%, 44%);
+    --light-blue: hsl(233, 100%, 69%);
+
+    --dark-grayish-blue: hsl(210, 10%, 33%);
+    --grayish-blue: hsl(201, 11%, 66%);
+    --grayish-white: #F5F6F8;
+
+    --body-text: 1.3em;
+}
+
+body {
+    font-family: "Bai Jamjuree", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    text-align: center;
+    color: var(--grayish-blue);
+    background: url(images/bg-header-mobile.png) no-repeat;
+    background-size: 100%;
+}
+
+main {
+    padding: 33px;
+}
+
+h1, h2 {
+    color: var(--dark-grayish-blue);
+}
+
+h1 {
+    font-size: 1.8em;
+}
+
+p {
+    line-height: 1.5rem;
+    margin: 15px 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+button {
+    padding: 15px 10px;
+    border-radius: 30px;
+    width: 100%;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 600;
+    border: none;
+    border-bottom: 3px solid rgba(128, 128, 128, 0.5);
+    transition: background-color 0.2s ease-in-out;
+}
+
+button:active {
+    transform: translateY(3px);
+    border-bottom: 3px solid transparent;
+    
+}
+
+.btn-ios {
+    background-color: var(--strong-cyan);
+    margin: 1em 0;
+}
+
+.btn-ios:hover {
+    background-color: hsl(171, 64%, 59%);
+    box-shadow: 1px 1px 10px hsl(171, 64%, 59%);
+}
+
+.btn-mac {
+    background-color: var(--light-blue);
+}
+
+.btn-mac:hover {
+    background-color: hsl(233, 81%, 75%);
+    box-shadow: 1px 1px 10px hsl(233, 81%, 75%);
+}
+
+.top-container .logo {
+    margin: 6em 0;
+}
+
+article, footer {
+    margin-top: 10em;
+}
+
+.track-snippets-bottom div, .access-clipboard-bottom, .advertising div, .bottom-container-description div  {
+    margin-top: 3em;
+}
+
+.supercharge-workflow, .supercharge-workflow-bottom div  {
+    margin-top: 5em;
+}
+
+footer {
+    background-color: var(--grayish-white);
+    padding: 30px 0;
+}
+
+footer a {
+    display: block;
+    text-decoration: none;
+    margin: 30px 0;
+    color: var(--dark-grayish-blue);
+}
+
+footer .logo img {
+    max-width: 15%;
+}
+
+.right-side {
+    margin-top: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.right-side .fa-brands {
+    cursor: pointer;
+    color: var(--dark-grayish-blue);
+}
+
+.right-side .fa-brands:hover {
+    color: var(--strong-cyan);
+}
+
+/* Media queries for the desktop version */
+@media screen and (min-width: 768px) {
+    body {
+        background: url(images/bg-header-desktop.png) no-repeat;
+        background-size: 100%;   
+    }
+    
+    main {
+        padding: 0;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    .top-container .logo {
+        margin: 2.7em 0;
+    }
+
+    .top-container-description, .track-snippets-top, .access-clipboard-top, .bottom-container-description {
+        max-width: 50%;
+        margin: 0 auto;
+    }
+
+    button {
+        width: auto;
+        padding: 15px 30px;
+    }
+
+    .btn-ios {
+        margin-right: 10px;
+    }
+
+    .track-snippets-bottom {
+        display: flex;
+        gap: 8em;
+        text-align: left;
+    }
+
+    .advertising {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .supercharge-workflow-bottom {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2em;
+        padding: 0 2em;
+    }
+
+    .supercharge-workflow-bottom img {
+        margin-bottom: 50px;
+    }
+
+    .advertising {
+        margin-top: 6em;
+        max-width: 100%;
+        justify-content: space-around;
+    }
+
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 4em;
+    }
+
+    footer .left-side a {
+        display: inline-block;
+        margin: 0 4em 0 0;
+        padding: 0px;
+
+    }
+
+    footer .logo img {
+        max-width: 50%;
+    }
+
+    .left-side {
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        gap: 4em;
+    }
+
+    .footer-links {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr auto;
+        grid-auto-flow: column;
+        gap: 1em 2em;
+        text-align: left;
+    }
+
+    .right-side {
+        margin: 0 auto;
+    }
+
+    .track-snippets-bottom > div:nth-child(2) {
+        max-width: 25%;
+    }
+  
+}
