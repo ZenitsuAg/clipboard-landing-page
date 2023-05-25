@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/clipboard-landing-page-using-pure-css-07Np2D9WjU)
+- Live Site URL: [GitHub Pages](https://zenitsuag.github.io/clipboard-landing-page/)
 
 ## My process
 
@@ -45,7 +45,7 @@ Users should be able to:
 
 ## Author
 
-- Website - [Fred Robins](https://github.com/ZenitsuAg/m)
+- Website - [Fred Robins](https://github.com/ZenitsuAg/)
 - Frontend Mentor - [@ZenitsuAg](https://www.frontendmentor.io/profile/ZenitsuAg)
 - Twitter - [@r9_freddy](https://www.twitter.com/r9_freddy)
 
